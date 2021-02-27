@@ -1,0 +1,93 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-total{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+button{
+    width: 65px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: gray;
+    border: none;
+    margin-top: 30px;
+    outline: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    
+}
+
+button img{
+    width: 20px;
+    position: relative;
+}
+
+#blackmode{
+    display: none;
+}
+
+.container-img{
+    position: relative;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    bottom: 1.8px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.rotate{
+    display: flex;
+    animation-name: rotation;
+    animation-duration: 1.5s;
+    padding-left: 37px;
+}
+
+@keyframes rotation {
+    0%{
+       padding-left: 0px;
+    }
+
+    100%{ 
+       padding-left: 37px;
+    }
+}
+
+.rotateright {
+    animation-name: rotation2;
+    animation-duration: 1.5s;
+}
+
+@keyframes rotation2{
+    0%{
+       padding-left: 37px;
+    }
+    100%{
+       padding-left: -2px;
+    }
+}
+
+.finalrotate{
+    padding-left: 37px;
+}
+
+.finalrotate2{
+    padding-left: 10px;
+}
